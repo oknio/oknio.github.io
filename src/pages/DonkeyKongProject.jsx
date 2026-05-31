@@ -1,4 +1,4 @@
-import React from 'react';
+
 import CodeSnippet from '../components/CodeSnippet';
 import './ProjectDetail.css';
 

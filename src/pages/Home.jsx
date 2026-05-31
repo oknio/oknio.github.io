@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HeroSlideshow from '../components/HeroSlideshow';
 import ProjectSection from '../components/ProjectSection';
 

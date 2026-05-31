@@ -11,7 +11,7 @@
  *  - The observer disconnects immediately after triggering (saves memory).
  *  - A fixed-size placeholder prevents CLS while the chunk downloads.
  */
-import React, { lazy, Suspense, useState, useCallback } from 'react';
+import { lazy, Suspense, useState, useCallback } from 'react';
 import { Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './ProjectSection.css';

@@ -70,6 +70,12 @@ button {
   padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
 .btn-primary {
   background: white;
   color: black;

@@ -18,6 +18,12 @@
   z-index: 1;
 }
 
+@media (max-width: 1024px) {
+  .project-bg {
+    background-attachment: scroll;
+  }
+}
+
 .project-bg.fade-out {
   opacity: 0;
 }
@@ -68,6 +74,13 @@
   display: flex;
   gap: 1rem;
   z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .video-controls-top {
+    top: 85px;
+    right: 1.5rem;
+  }
 }
 
 .control-btn {
@@ -131,7 +144,7 @@
 }
 
 .project-title-large {
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.05;
@@ -226,5 +239,47 @@
   .project-details {
     flex: 1;
     padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-logo-main {
+    max-height: 100px;
+    max-width: 85%;
+    margin-bottom: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-content {
+    padding-bottom: 4rem;
+  }
+
+  .project-actions {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-logo-main {
+    max-height: 80px;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .project-actions .btn-primary,
+  .project-actions .btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 }

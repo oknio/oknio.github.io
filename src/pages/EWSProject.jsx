@@ -1,4 +1,3 @@
-import React from 'react';
 import { Download } from 'lucide-react';
 import CodeSnippet from '../components/CodeSnippet';
 import './ProjectDetail.css';
@@ -149,12 +148,16 @@ void Update()
               </a>
             </div>
             
-            <div className="pdf-preview">
+            <div className="pdf-preview pdf-preview-desktop">
               <iframe
                 src="/files/docs/ews/Dissertation.pdf#toolbar=0"
                 title="Eyes Wide Shut Dissertation"
                 className="pdf-iframe"
               />
+            </div>
+
+            <div className="pdf-preview-mobile">
+              <p>Inline PDF preview is not supported on mobile devices. Please use the button above to download or open the dissertation in a new tab.</p>
             </div>
           </div>
         </section>
