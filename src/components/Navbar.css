@@ -91,6 +91,10 @@
   color: var(--color-text-muted);
 }
 
+.nav-link.active {
+  color: var(--color-accent);
+}
+
 .navbar-actions {
   display: flex;
   align-items: center;
